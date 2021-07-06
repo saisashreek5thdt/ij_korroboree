@@ -1,0 +1,319 @@
+
+@charset "utf-8";
+
+@import url("../fonts/chalk/chalk.css");
+button {
+    position: fixed !important;
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    z-index:100;
+   -webkit-user-select:none;
+    outline: none;
+  }
+  button.learn-more {
+    width: 12rem;
+    height: auto;
+    margin-left:14rem;
+    margin-top: 16px;
+  }
+  button.learn-more .circle_btn {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    background-color:#FFCC2A ;
+    border-radius: 1.625rem;
+  }
+  button.learn-more .circle_btn .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  button.learn-more .circle_btn .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  button.learn-more .circle_btn .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #504D4D;
+    border-right: 0.125rem solid #504D4D;
+    transform: rotate(45deg);
+  }
+  button.learn-more .circle_btn .icon.arrow2 {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.825rem;
+    width: 1.125rem;
+    height: 1.525rem;
+    background: none;
+  }
+  button.learn-more .circle_btn .icon.arrow2::before {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #504D4D;
+    border-right: 0.125rem solid #504D4D;
+    transform: rotate(45deg);
+  }
+  button.learn-more .circle_btn .icon.arrow3 {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+    font-family: Montserrat medium !important;
+  }
+  button.learn-more .circle_btn .icon.arrow3::before {
+    position: absolute;
+    content: "";
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+    font-family: Montserrat medium !important;
+  }
+  button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top:12px;
+    left: 4px;
+    font-family: Montserrat medium !important;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: white;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+  } 
+  button:hover .circle_btn {
+    width: 100%;
+  }
+  button:hover .circle_btn_btn .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+  }
+  button:hover .button-text {
+    color: #fff;
+  }
+.bcbtn{
+  margin-left: 3rem !important;
+}
+
+
+
+  /* <---input----> */
+
+
+  
+/* Question */
+
+/* input,
+label,
+textarea {
+  font-family:"djb_chalk_it_upregular" !important ;
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+} */
+/* Question */
+/* 
+input.question, textarea.question {
+  font-size: 20px;
+  border-radius: 2px;
+  font-family: "djb_chalk_it_upregular" !important;
+  margin: 0;
+  color: white;
+  border: none;
+  margin-top: 26px;
+  width: 102%;
+  background: rgba(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden;
+} */
+/* Underline and Placeholder */
+/* 
+input.question + label,
+textarea.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  border-top: 1px solid #FFCC2A ;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus + label,
+textarea.question:focus + label {
+  width: 80%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 21px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -80px;
+  font-size: 22px;
+  color: white;
+}
+
+textarea.question:focus + label > span,
+textarea.question:valid + label > span {
+  top: -150px;
+  font-size: 22px;
+  color: white;
+}
+
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: #FFCC2A ;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 200;
+  margin: 0;
+  position: absolute;
+  color: white;
+  font-family: "djb_chalk_it_upregular" !important;
+  font-size: 25px;
+  top: -48px;
+  left: 0px;
+  z-index: -1;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+.inputEn {
+  margin-left: 13rem;
+  margin-top: 103px;
+} */
+.click2bt{
+  margin-left: -5rem !important;
+  margin-top: -5rem !important;
+}
+.clickbt3 {
+  margin-top: 6px !important;
+  margin-left: -14rem !important;
+}
+.clickbt4 {
+  margin-left: 74px !important;
+  margin-top: 27px !important;
+}
+.button:active, 
+ button:active,
+.button:focus, 
+ button:focus,
+.button:hover, 
+ button:hover{
+    border:none !important;
+    outline:none !important;
+}
+/* .svg-inline--fa::before {
+  display: inline-block;
+  font-size: 26px;
+  height: 46px;
+  overflow: visible;
+  vertical-align: -.125em;
+  position: absolute !important;
+  top: -0.25rem;
+  right: 0.0625rem;
+} */
+/* 
+.backbtn_text{
+  color: #C9C9C9;
+  text-align: center;
+  
+}
+.back_btn{
+  width: 30px;
+  height: 30px;
+  color:black;
+  text-align: center;
+  border-radius: 50px;
+  background-color:#C9C9C9;
+} */
+
+
+
+/* <-----textarea---------> */
+
+.textfield__field { position: relative;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+.textfield__field label { color:white; font-family:"djb_chalk_it_upregular" !important ;font-size: 22px; cursor: auto; font-weight: normal; left:0;
+	margin: 0; text-align: left; position: absolute; top: 34px; line-height: 30px;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+.textfield__field.is-dirty label,
+.textfield__field.is-focused label { top: 10px; font-size: 14px; padding-left: 8px; font-family:"djb_chalk_it_upregular" !important ; line-height: 22px; }
+.textfield__field.is-focused label { color:#9c9a9a; }
+.textfield__field.is-dirty .textfield__input,
+.textfield__field.is-focused .textfield__input { padding-left: 8px; padding-right: 8px;}
+.textfield.akf-textfield--floating-label .textfield__field { padding-top: 32px; }
+.textfield__input { display: block; margin: 0; padding: 0 0 6px 0; width: 100%; font-size: 24px;
+	background: none; border: none; resize: none; outline: 0; border-radius: 0; font-family:"djb_chalk_it_upregular" !important ;
+	border-bottom: 1px solid #878787; color: white; height: 40px;
+}
+
+textarea.textfield__input { height: 70px; }
+.textfield__field.is-focused { background:transparent; }
+.textfield__field.is-focused:after { position: absolute; bottom: 1px; left: 0; width: 100%; content: ''; height: 1px; background: #4a4a4a; }
+.textfield__field.is-focused .textfield__input { border-bottom-color: #4a4a4a; }
